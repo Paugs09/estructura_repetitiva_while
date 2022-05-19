@@ -5,21 +5,22 @@ print("-----------------------------------------")
 print("---------- CANTIDAD DE NÚMEROS ----------")
 print("-----------------------------------------")
 
-c=0
-
 # input 
 print("Ingrese el primer número del rango:")
 ni=int(input())
 print(("Ingrese el último número del rango: "))
 nf=int(input())
 
+c=0
 i=ni+1
 # processing
-while i<nf:
-    i=i+1
-    c=c+1 
-    print(ni+c)
-   
+if ni<nf:
+    while i<nf:
+        i=i+1
+        c=c+1 
+        print(ni+c)
+else:
+    print("ni debe ser menor que nf")
 
 # output
 print("La cantidad de números es: " +str(c))
